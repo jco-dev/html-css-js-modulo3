@@ -9,6 +9,208 @@
 
 <body>
 
+    <!-- Heading CTRL + C -->
+    <h1>Encabezado Nivel 1 - El más importante</h1>
+    <h2>Encabezado Nivel 2</h2>
+    <h3>Encabezado Nivel 3</h3>
+    <h4>Encabezado Nivel 4</h4>
+    <h5>Encabezado Nivel 5</h5>
+    <h6>Encabezado Nivel 6 - El menos importante</h6>
+
+    <!-- Párrafos y Saltos de línea -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero, quis reprehenderit optio hic, rem
+        atque totam, quidem inventore aut distinctio assumenda officiis. Veritatis quas illo quis placeat ut quae.Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero, quis reprehenderit optio hic, rem atque
+        totam, quidem inventore aut distinctio assumenda officiis. Veritatis quas illo quis placeat ut quae.</p>
+    <p>Este es otro párrafo.<br> Este texto está en la misma línea pero con un salto de línea.</p>
+
+    <hr>
+
+    <p>Este es otro párrafo.<br> Este texto está en la misma línea pero con un salto de línea.</p>
+
+
+    <!-- Formatos de texto -->
+    <p>Texto <strong>en negrita</strong> </p>
+    <p>Texto <b>en negrita</b> </p>
+
+    <p>Texto <em>en cursiva</em> </p>
+    <p>Texto <i>en cursiva</i> </p>
+
+    <p>Texto <mark> resaltado </mark> como un marcador</p>
+
+    <p>Texto <small>pequeño</small></p>
+
+    <p>Texto <del> tachado</del> y <ins>subrayado</ins></p>
+
+    <p>Fórmula: H<sub>2</sub>0 (subíndice)</p>
+    <p>Exponente: 10<sup>2</sup> (superíndice)</p>
+
+    <hr>
+    <!-- LISTAS -->
+    Lista no ordenada
+    <h3>Mis frutas favoritas</h3>
+    <ul>
+        <li>Manzanas</li>
+        <li>Plátanos</li>
+        <li>Naranjas</li>
+        <li>Uvas</li>
+    </ul>
+
+    Lista ordenada
+    <h3>Mis números favoritos</h3>
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+    </ol>
+
+    <hr>
+    <!-- ENLACES E IMÁGENES -->
+
+    <!-- Enlace externo -->
+    <a href="https://www.google.com">Ir a Google</a>
+
+    <!-- Enlace externo que abre en una nueva pestaña -->
+    <a href="https://www.google.com" target="_blank">Ir a Google (nueva pestaña)</a>
+
+    <!-- Enlace a otra página del mismo sitio -->
+    <a href="contacto.html">Ir a Contacto</a>
+
+    <!-- Enlace de correo electrónico -->
+    <a href="mailto:juanzapanacondori@gmail.com">Enviar correo</a>
+
+    <!-- Enlace de teléfono -->
+    <a href="tel:+59170648629">Llamar</a>
+
+    <!-- Imágenes -->
+    <img src="./img/html5.png" alt="Imagen de HTML5" width="250" height="200">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.UGandM7-hHuMvT-J5xGZbwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+
+
+    <a href="https://www.google.com">
+        <img src="./img/html5.png" alt="Imagen de HTML5" width="250" height="200">
+    </a>
+
+    <!-- TABLAS -->
+    <h2>Horario de clases</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>8:00 - 9:00</td>
+                <td>Matemáticas</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td>Inglés</td>
+                <td>Matemáticas</td>
+                <td>Arte</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <!-- FORMULARIOS -->
+    <form action="estructurasemantica.html" method="get" enctype="multipart/form-data">
+        <!-- texto -->
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..." required>
+
+        <br><br>
+
+        <!-- correo electrónico -->
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico..." required>
+
+        <br><br>
+        <!-- Contraseña -->
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="********" required>
+
+        <br><br>
+        <!-- radio -->
+        <p>Género:</p>
+        <input type="radio" name="genero" id="masculino" value="M">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="femenino" value="F">
+        <label for="femenino">Femenino</label>
+
+        <br><br>
+
+        <!-- Checkboxes: -->
+        <p>Intereses:</p>
+        <input type="checkbox" name="intereses" id="musica" value="musica">
+        <label for="musica">Música</label>
+
+        <input type="checkbox" name="intereses" id="deportes" value="deportes">
+        <label for="deportes">Deportes</label>
+
+        <input type="checkbox" name="intereses" id="lectura" value="lectura">
+        <label for="lectura">Lectura</label>
+
+        <br><br>
+
+        <!-- Select -->
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="bolivia">Bolivia</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Perú</option>
+        </select>
+
+        <br><br>
+
+        <!-- Área de texto -->
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea>
+
+        <br><br>
+
+        <!-- Number -->
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="0" max="120" placeholder="Ingrese su edad...">
+
+        <br><br>
+
+        <!-- Fecha -->
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <br><br>
+
+        <!-- Archivos -->
+        <label for="archivo">Archivo</label>
+        <input type="file" name="archivo" id="archivo">
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">Crear</button>
+    </form>
+
+
 </body>
 
 </html>
