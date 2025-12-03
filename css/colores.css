@@ -1,0 +1,19 @@
+.colores {
+    /* Nombre de colores */
+    color: blue;
+
+    /* Hexadecimal */
+    color: #F00; /* FF0000 */
+
+    /* RGB */
+    color: rgb(255, 0, 0); /* 0 a 255 */
+
+    /* RGBA(CON TRANSPARENCIA) */
+    color: rgba(65, 154, 132, 1); /* 0 a 255, 0 a 1 */
+
+    /* HSL */
+    /* color: hsl(284, 85%, 31%); */
+
+    /* HSL CON TRANSPARENCIA */
+    color: hsla(35, 93%, 38%, 1);
+}

@@ -1,0 +1,48 @@
+body {
+    /* Familia de la fuente */
+    font-family: "Bebas Neue",Arial, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+
+    /* peso de la fuente */
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: 400;
+
+    /* Estilo de la fuente */
+    font-style: normal;
+    font-style: italic;
+
+    /* Alineación del texto */
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+
+    /* Decoración del texto */
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+
+    /* Transformaciones */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    /* Espaciado entre letras */
+    letter-spacing: 5px;
+
+    /* Espaciado entre palabras */
+    word-spacing: 10px;
+
+    /* Altura de linea */
+    line-height: 2.5;
+
+}
+
+a {
+    text-decoration: none;
+}
