@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html! lang="en1!!!">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. GRID</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 50px;
+            gap: 10px;
+        }
+
+        .grid div {
+            background-color: #e48b67;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Definir filas y columnas juntas GRID</h1>
+    <div class="grid">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html!>

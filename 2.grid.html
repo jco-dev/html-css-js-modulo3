@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. GRID</title>
+    <style>
+        .grid div {
+            background-color: #e48b67;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Crear  3 columnas de diferente tamaño</h1>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

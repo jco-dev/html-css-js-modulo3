@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. GRID</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item1 {
+            grid-column: span 3;
+            background-color: #e48b67;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .grid div {
+            background-color: #e48b67;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos que ocupan varias columnas</h1>
+    <div class="grid">
+        <div class="item1">Elemento que ocupa varias columnas</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
