@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>Los simpsons</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- <script src="js/1. operadores.js"></script> -->
-    <!-- <script src="js/2.condicionales.js"></script> -->
-    <!-- <script src="js/3.bucles.js"></script> -->
-    <!-- <script src="js/4.funciones.js"></script> -->
-    <!-- <script src="js/5.scope.js"></script> -->
-    <!-- <script src="js/6.arrays.js"></script> -->
-    <!-- <script src="js/7.objetos.js"></script> -->
-    <script src="js/8.destructuring.js"></script>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Los Simpsons API</h1>
+        <p>Explora todos los personajes de Los Simpsons en Springfield</p>
+    </header>
+
+    <!-- Controles de búsqueda y filtros -->
+    <div class="controls">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar personajes por nombre...">
+            <button id="searchBtn">Buscar</button>
+            <button id="loadAllBtn">Ver Todos</button>
+        </div>
+
+        <div class="filters">
+            <select id="genderFilter">
+                <option value="">Todos los géneros</option>
+                <option value="Male">Masculino</option>
+                <option value="Female">Femenino</option>
+            </select>
+
+            <select id="statusFilter">
+                <option value="">Todos los estados</option>
+                <option value="Alive">Vivo</option>
+                <option value="Deceased">Muerto</option>
+            </select>
+
+        </div>
+    </div>
+
+    <!-- Indicar de carga -->
+    <div id="loading" class="loading"> Cargando personajes...</div>
+
+    <!-- Personajes -->
+    <div id="characterGrid" class="character-grid"></div>
+
+    <!-- Paginación -->
+    <div id="pagination" class="pagination">
+        <button id="prevBtn">Anterior</button>
+        <div class="page-info">
+            Página <span id="currentPage">1</span> de <span id="totalPages">1</span>
+        </div>
+        <button id="nextBtn">Siguiente</button>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalName"></h2>
+                <button class="close-modal">X</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
