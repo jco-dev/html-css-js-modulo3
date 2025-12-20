@@ -1,0 +1,161 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Cargado de fuente */
+@font-face {
+    font-family: 'SimpsonsFont';
+    src: url('./fuente/Simpsonfont-p07r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    padding: 30px;
+    background-color: #1e90ff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    border: 3px solid #000;
+}
+
+.encabezado h1 {
+    color: #ffd700;
+    font-size: 2.5em;
+    font-family: 'SimpsonsFont', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 4px 2px 0px #000;
+    letter-spacing: 2px;
+}
+
+.encabezado p {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Controles */
+.controles {
+   background-color: yellow;
+   padding: 20px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   border: 2px solid #000;
+}
+
+.caja-busqueda {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.caja-busqueda input {
+    flex:1;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 200px;
+}
+
+.caja-busqueda button {
+    padding: 10px 25px;
+    background-color: #e73737ff;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer; 
+    transition: all 0.3s;
+}
+
+.caja-busqueda button:hover {
+    background-color: #c32b2bff;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.filtros select{
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+/* Cargando */
+.cargando {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Cuadrícula de Personajes */
+.cuadricula-personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.tarjeta-personaje{
+    background-color: #fff;
+    border-radius; .5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tarjeta-personaje:hover {
+    border-color: #facc15;
+    background-color: #fffbeb;
+}
+
+.enlace-tarjeta-personaje {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.encabezado-personaje{
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.envoltorio-imagen-personaje{
+    margin: 0 auto  1rem;
+    position: relative;
+}
+
+.contenedor-imagen-personaje{
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+.imagen-personaje{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

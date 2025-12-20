@@ -5,33 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los simpsons</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <!-- Encabezado -->
-    <header class="header">
+    <header class="encabezado">
         <h1>Los Simpsons API</h1>
         <p>Explora todos los personajes de Los Simpsons en Springfield</p>
     </header>
 
     <!-- Controles de búsqueda y filtros -->
-    <div class="controls">
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Buscar personajes por nombre...">
-            <button id="searchBtn">Buscar</button>
-            <button id="loadAllBtn">Ver Todos</button>
+    <div class="controles">
+        <div class="caja-busqueda">
+            <input type="text" id="entradaBusqueda" placeholder="Buscar personajes por nombre...">
+            <button onclick="buscarPersonaje()">Buscar</button>
+            <button onclick="cargarTodosLosPersonajes()">Ver Todos</button>
         </div>
 
-        <div class="filters">
-            <select id="genderFilter">
+        <div class="filtros">
+            <select id="filtroGenero">
                 <option value="">Todos los géneros</option>
                 <option value="Male">Masculino</option>
                 <option value="Female">Femenino</option>
             </select>
 
-            <select id="statusFilter">
+            <select id="filtroEstado">
                 <option value="">Todos los estados</option>
                 <option value="Alive">Vivo</option>
                 <option value="Deceased">Muerto</option>
@@ -41,29 +41,28 @@
     </div>
 
     <!-- Indicar de carga -->
-    <div id="loading" class="loading"> Cargando personajes...</div>
+    <div id="cargando" class="cargando"> Cargando personajes...</div>
 
     <!-- Personajes -->
-    <div id="characterGrid" class="character-grid"></div>
+    <div id="cuadriculaPersonajes" class="cuadricula-personajes"></div>
 
     <!-- Paginación -->
-    <div id="pagination" class="pagination">
-        <button id="prevBtn">Anterior</button>
+    <div id="paginacion" class="paginacion">
+        <button id="botonAnterior" onclick="paginaAnterior()">Anterior</button>
         <div class="page-info">
-            Página <span id="currentPage">1</span> de <span id="totalPages">1</span>
+            Página <span id="paginaActual">1</span> de <span id="totalPaginas">1</span>
         </div>
-        <button id="nextBtn">Siguiente</button>
+        <button id="botonSiguiente" onclick="paginaSiguiente()">Siguiente</button>
     </div>
 
     <!-- Modal -->
-
     <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalName"></h2>
-                <button class="close-modal">X</button>
+        <div class="contenido-modal">
+            <div class="encabezado-modal">
+                <h2 id="nombreModal"></h2>
+                <button class="cerrar-modal">X</button>
             </div>
-            <div class="modal-body" id="modalBody"></div>
+            <div class="cuerpo-modal" id="cuerpoModal"></div>
         </div>
     </div>
 
